@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GameDevHelperOpenApi</name>
+    </assembly>
+    <members>
+        <member name="M:GameDevHelper.Controllers.BugLogController.GetBugLogs">
+            <summary>
+            Returns all bugs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameDevHelper.Controllers.BugLogController.CreateBug(GameDevHelper.Models.BugLog)">
+            <summary>
+            Creates a bug
+            </summary>
+            <param name="bugLog"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GameDevHelper.Controllers.BugLogController.SearchBugLog(System.String,System.Int32)">
+            <summary>
+            Searches for a bug from the db with status or projectId the bug is attached to
+            </summary>
+            <param name="status"></param>
+            <param name="projectId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GameDevHelper.Controllers.BugLogController.UpdateBugLogStatus(System.Int32)">
+            <summary>
+            Updates the bug status Open/Fixed
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GameDevHelper.Controllers.BugLogController.UpdateBugAssignedToId(System.Int32,System.String)">
+            <summary>
+            Change/Update the BugLogs AssignedToId value using Id to find the bug
+            </summary>
+            <param name="id"></param>
+            <param name="assignedToId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GameDevHelper.Controllers.BugLogController.DeleteBugLog(System.Int32)">
+            <summary>
+            Deletes a bug log by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GameDevHelper.Controllers.FeatureController.GetFeatures">
+            <summary>
+            Returns all features
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameDevHelper.Controllers.FeatureController.CreateFeature(GameDevHelper.Models.Feature)">
+            <summary>
+            Creates a feature
+            </summary>
+            <param name="feature"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GameDevHelper.Controllers.FeatureController.UpdateFeatureStatus(System.Int32)">
+            <summary>
+            Updates the features status InProgress/Finished
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GameDevHelper.Controllers.FeatureController.UpdateFeatureAssignedUserId(System.Int32,System.String)">
+            <summary>
+            Change/Update the Features AssignedToId value using Id to find the bug
+            </summary>
+            <param name="id"></param>
+            <param name="assignedUserId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GameDevHelper.Controllers.FeatureController.SearchFeature(System.Nullable{System.Int32},System.String,System.String)">
+            <summary>
+            Searches for a feature from the db with id or name or status
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GameDevHelper.Controllers.FeatureController.DeleteFeature(System.Int32)">
+            <summary>
+            Delete feature by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GameDevHelper.Controllers.ProjectController.GetProjects">
+            <summary>
+            Returns all projects
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GameDevHelper.Controllers.ProjectController.CreateProject(GameDevHelper.Models.Project)">
+            <summary>
+            Creates a new project
+            </summary>
+            <param name="project"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GameDevHelper.Controllers.ProjectController.SearchProject(System.Nullable{System.Int32},System.String,System.String)">
+            <summary>
+            Searches for a Project with id or projectName or status
+            </summary>
+            <param name="id"></param>
+            <param name="projectName"></param>
+            <param name="status"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GameDevHelper.Controllers.ProjectController.UpdateProjectStatus(System.Int32)">
+            <summary>
+            Updates the project status In Progress/Finished
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GameDevHelper.Controllers.ProjectController.DeleteProject(System.Int32)">
+            <summary>
+            Deletes the project by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProjectManagementAPI.Controllers.TokensController.Post(TokenDTO)">
+            <summary>
+            Generates a JWT token for the logged user 
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UserController.Register(GameDevHelperOpenApi.DTO.RegisterDTO)">
+            <summary>
+            Registers a user using the DTO model
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UserController.GetUsers">
+            <summary>
+            Returns all users
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:UserController.SearchUser(System.String,System.String,System.String)">
+            <summary>
+            Search user by userName or eMail or id
+            </summary>
+            <param name="userName"></param>
+            <param name="eMail"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UserController.DeleteUser(System.String)">
+            <summary>
+            Delete user by username
+            </summary>
+            <param name="userName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:UserController.UpdateUserName(System.String,System.String)">
+            <summary>
+            Update/Change username
+            </summary>
+            <param name="name"></param>
+            <param name="userName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GameDevHelperOpenApi.Migrations.InitMigration">
+            <inheritdoc />
+        </member>
+        <member name="M:GameDevHelperOpenApi.Migrations.InitMigration.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:GameDevHelperOpenApi.Migrations.InitMigration.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:GameDevHelperOpenApi.Migrations.InitMigration.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:GameDevHelperOpenApi.Migrations.AddUserRegister">
+            <inheritdoc />
+        </member>
+        <member name="M:GameDevHelperOpenApi.Migrations.AddUserRegister.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:GameDevHelperOpenApi.Migrations.AddUserRegister.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:GameDevHelperOpenApi.Migrations.AddUserRegister.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:GameDevHelperOpenApi.Services.UserSearchService.SearchUser(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="userName"></param>
+            <param name="eMail"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
